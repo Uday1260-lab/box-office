@@ -28,16 +28,16 @@ const Starred = () => {
         } else {
             setIsLoading(false);
         }
-    }, [setShows, starred])
+    }, [starred])
 
     return (
         <MainPageLayout>
         { isLoading && <div> Shows are loading </div> }
         {error && <div>Error occured : {error} </div>}
         {!isLoading && !error && !shows && <div> No shows are Starred...</div>}
-        {!isLoading && !error && shows && <ShowGrid data={shows}/>}
+        {!isLoading && !error && shows && <ShowGrid data={shows} />}
         </MainPageLayout>
-    )
-}
+    );
+};
 
 export default Starred;
