@@ -14,7 +14,9 @@ const Starred = () => {
     useEffect(() => {
         if (starred && starred.length > 0) {
             const promises = starred.map(showId => apiGet(`/shows/${showId}`));
-            Promise.all(promises).then(apiData => apiData.map(show => ({show}))).then(results => {
+            Promise.all(promises)
+            .then(apiData => apiData.map(shows => ({shows})))
+            .then(results => {
                 console.log('shows' , results);
                 setShows(results);
                 setIsLoading(false)
@@ -26,13 +28,13 @@ const Starred = () => {
         } else {
             setIsLoading(false);
         }
-    }, [starred])
+    }, [setShows, starred])
 
     return (
         <MainPageLayout>
         { isLoading && <div> Shows are loading </div> }
         {error && <div>Error occured : {error} </div>}
-        {!isLoading && <div> No shows are Starred...</div>}
+        {!isLoading && !error && !shows && <div> No shows are Starred...</div>}
         {!isLoading && !error && shows && <ShowGrid data={shows}/>}
         </MainPageLayout>
     )
