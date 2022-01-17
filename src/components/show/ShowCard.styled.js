@@ -21,6 +21,7 @@ export const StyledShowCard = styled(SearchCard)`
       padding: 5px 20px;
       background-color: #fff;
       display: flex;
+      background-color: #301B3F;
       justify-content: center;
       align-items: center;
       &:hover {

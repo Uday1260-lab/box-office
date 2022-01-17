@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const ShowPageWrapper = styled.div`
-padding: 0 20px;
+padding: 40px;
+margin:50px;
+font-family: 'Charm', cursive;
+font-size:25px;
 
 @media only screen and (min-width: 516px) {
   padding: 0 40px;

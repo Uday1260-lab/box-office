@@ -6,15 +6,16 @@ width: 200px;
 margin: auto;
 outline: none;
 padding: 13px 15px;
-border: 1px solid #dbdbdb;
-box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.5);
-font-size: 14px;
+border: 1px solid #FF7F3F;
+box-shadow: 0px 0px 10px 0px #FF7F3F;
+font-size: 17px;
 border-radius: 12px;
-color: #8d8d8d;
+background-color:#E7FBBE;
+color:#B91646;
 
 &::placeholder {
   font-weight: 300;
-  color: #8d8d8d;
+  color: #FFAB76;
 }
 `;
 
@@ -22,8 +23,8 @@ export const RadioInputsWrapper = styled.div`
 display: flex;
 justify-content: center;
 margin: 20px 0;
-
 div {
+  color:#F58634;
   margin: 0 15px;
 }
 `;
@@ -34,11 +35,11 @@ margin-bottom: 35px;
 
 button {
   color: #fff;
-  background-color: ${({ theme }) => theme.mainColors.blue};
   margin: auto;
   padding: 10px 50px;
   font-size: 15px;
   border: none;
+  background-color:#FF8303;
   outline: none;
   border-radius: 12px;
   &:hover {

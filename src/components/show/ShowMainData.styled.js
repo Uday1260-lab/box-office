@@ -2,6 +2,8 @@ import styled from "styled-components";
 export const MainDataWrapper = styled.div`
   display: flex;
   margin-bottom: 40px;
+  font-family: 'Charm', cursive;
+  
 
   img {
     min-width: 250px;
@@ -14,8 +16,14 @@ export const MainDataWrapper = styled.div`
   .text-side {
     margin-left: 20px;
     .summary {
+      border-radius:10px;
+      background-color:#FF6464;
+      padding:20px;
       color: #5f5f5f;
       line-height: 1.5;
+      font-family: 'Reenie Beanie', cursive;
+      font-size:30px;
+      font-weight:bold;
     }
   }
 
@@ -42,6 +50,7 @@ export const Headline = styled.div`
     border-right: 1px solid #ddd;
     padding-right: 25px;
     margin-right: 20px;
+    font-family: 'Charm', cursive;
   }
 
   div {
@@ -56,6 +65,7 @@ export const Headline = styled.div`
 export const TagList = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
+  padding:10px;
 
   span {
     margin: 6px;
